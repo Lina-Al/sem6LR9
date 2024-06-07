@@ -1,24 +1,22 @@
-# sem6LR9
-
 # Sem6Lr8
 
-Делать работу будем в Pycharm
+установим Poetry при помощи:
+ (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+или просто использовать Pip install poetry
 
-Пишем легкий код
-'from fastapi import FastAPI
+![image](https://github.com/Lina-Al/sem6LR9/assets/98892615/da718055-16f3-4af2-93f7-3b8378b72712)
 
-app = FastAPI()
-@app.get("/")
+Проверяем версию:
+(venv) PS C:\LR8> poetry --version
+Poetry (version 1.8.3)
 
-async def home():
-   return {"data": "Hello World"}
-'
+создаем папку my_projekt, после чего добавим poetry add sphinx
+![image](https://github.com/Lina-Al/sem6LR9/assets/98892615/de08ecee-904d-42e3-bddd-7db56f004174)
 
-и сделаем виртуальное окружение
-![image](https://github.com/Lina-Al/Sem8Lr8/assets/98892615/bcbc48b2-a0ed-4daf-8fa0-1771bcd75ac5)
+Для удобства настроила файл conf.py
 
-![image](https://github.com/Lina-Al/Sem8Lr8/assets/98892615/657cadfd-ab38-4c51-99f8-b14382751ba9)
+![image](https://github.com/Lina-Al/sem6LR9/assets/98892615/2f0316ff-5181-47ea-bf18-2935bd991ca7)
 
-Для лучше настройки можно в конце добавить /docs, то появится:
+Запустим файл index.html. Мы видим нашу небольшую документацию
 
-![image](https://github.com/Lina-Al/Sem8Lr8/assets/98892615/8b73549d-43b1-4e36-a657-e76e6ce57c10)
+![image](https://github.com/Lina-Al/sem6LR9/assets/98892615/2289f4ed-6362-4058-adb4-c263845a4032)
